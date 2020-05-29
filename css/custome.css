@@ -1,0 +1,513 @@
+/* 
+    Created on : May 21, 2020, 11:42:16 PM
+    Author     : Ahmed Darsha
+*/
+body{
+    overflow-x: hidden
+}
+/* Start the global */
+:root{
+    --main-color:#007bff;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+h1,.h1{font-size: 3rem}
+h2,.h2{font-size: 2.5rem}
+h3,.h3{font-size: 2rem}
+h4,.h4{font-size: 1.5rem}
+h5,.h5{font-size: 1.3rem}
+h1,h2,h3,h4,h5,h6{text-transform: capitalize}
+p{
+    font-size: 17px;
+    color: #737373 !important
+}
+.container,.row{height: 100%}
+.md-padding{
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.section-title{
+    color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 40px
+}
+a{
+ -webkit-transition: 0.3s ease-in-out;    
+ -mos-transition: 0.3s ease-in-out;    
+ transition: 0.3s ease-in-out; 
+ text-transform: capitalize
+}
+a:hover{
+    text-decoration: none;
+    opacity: 0.7
+}
+.btn{
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background-color: #040505;
+    border-color: #040505
+}
+/* End the global */
+
+
+
+
+/* Start the nav bar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 2rem 0;
+    transition: .3s ease-in-out;
+}
+.navbar .navbar-brand{
+    font-size: 2rem;
+    color: #FFF;
+    line-height: 1.2
+}
+.navbar .collapse.show{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    background-color: #FFF;
+    width: 300px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+    padding: 15px 0;
+}
+.navbar .collapse:not(.show) .menu-close{display: none}
+.navbar .collapse.show .menu-close{
+    padding: 0 30px;
+    text-align: right;
+    display: block
+}
+.navbar .collapse.show .menu-close svg{
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #999;
+}
+.navbar .collapse.show .menu-close svg:hover{color:#333}
+.navbar .collapse.show ul{
+    padding: 0 20px;
+}
+.navbar .collapse.show .navbar-nav .has-child > .children {
+    position: static;
+    border: none;
+    display: block
+}
+.navbar .collapse.show .navbar-nav .nav-link{
+    color: #000
+}
+.navbar .collapse.show .navbar-nav .has-child svg{
+    right: 90px;
+    color: #000
+}
+.navbar .collapse.show .navbar-nav .has-child .fa-chevron-right{right: 20px}
+.navbar .collapse.show .navbar-nav .active > .nav-link{
+    color: var(--main-color);
+    opacity: 1
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #c8c9cc;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-size: 17px;
+    line-height: 1.7
+}
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .active .nav-link{
+    color: #FFF;
+    opacity: 1
+}
+.navbar .navbar-nav .has-child{position: relative}
+.navbar .navbar-nav .has-child svg{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    color: #c8c9cc;
+    font-size: 10px;
+    cursor: pointer;
+}
+.navbar .navbar-nav .has-child .children{
+    position: absolute;
+    background: #FFF;
+    color: #000; 
+    border: 1px solid #EEE;
+    border-top: 2px solid var(--main-color);
+    width: 208px;
+    display: none
+}
+.navbar .navbar-nav .has-child .children .has-child .children{
+    top: 0;
+    left: 100%
+}
+.navbar .navbar-nav .has-child:hover > .children{
+    display: block
+}
+.navbar .navbar-nav .has-child .children .nav-item:hover{background-color: rgba(0,0,0,0.08)}
+.navbar .navbar-nav .has-child .children .nav-link{color: #000}
+.navbar .navbar-nav .has-child .fa-chevron-right{
+    right: 20px;
+    color: #000;
+}
+.navbar .navbar-toggler {border: none}
+.navbar .navbar-toggler svg{
+    color: #FFF;
+}
+.navbar.fixed-nav .navbar-toggler svg{
+    color: #333;
+}
+
+.navbar.fixed-nav{
+    background: #FFF;
+    position: fixed;
+    
+}
+.navbar.fixed-nav .navbar-brand{color: var(--main-color);}
+.navbar.fixed-nav .navbar-nav .has-child .fa-chevron-down,
+.navbar.fixed-nav .navbar-nav > .nav-item > .nav-link{color: #000}
+.navbar.fixed-nav .navbar-nav > .nav-item > .nav-link:hover,
+.navbar.fixed-nav .navbar-nav .active > .fa-chevron-down,
+.navbar.fixed-nav .navbar-nav .active > .nav-link{
+    color: var(--main-color);
+}
+/* End the nav bar */
+
+/* Start the Section of Header */
+header{
+    background-image: url(../images/bg-headear.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh    
+}
+header h1{
+    font-weight: bold;
+}
+ @media (max-width: 991.98px) {
+    header h1 {
+        font-size: 2rem; 
+    } 
+ }
+  
+header p{
+    font-size: 1.51rem;
+    font-weight: 300;
+}
+header .btn{
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-transform: capitalize;
+}
+header .btn:hover{
+    background-color: #040505;
+    border-color: #040505
+}
+header .mouse{
+    position: relative;
+    left: 50%;
+    bottom: 80px;
+    z-index: 5;
+    display: inline-block
+}
+header .mouse .mouse-icon{
+    display: block;
+    border: 1px solid #FFF;
+    width: 25px;
+    height: 45px;
+    border-radius: 15px;
+    text-align: center;    
+    position: relative
+}
+header .mouse .mouse-icon .mouse-wheel{
+    width: 4px;
+    height: 4px;
+    background: #EEE;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    -webkit-animation: drop-down 1.6s infinite ;
+    -moz-animation: drop-down 1.6s infinite ;
+    animation: drop-down 1.6s infinite ;
+}
+
+@keyframes drop-down {
+  from {margin-top:0px ;}
+  to   {margin-top:25px; opacity:0;}
+}
+/* End the Section of Header */
+
+/* Start the Section of Features */
+.features .carousel .carousel-control{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 49%;
+    background-color: var(--main-color);
+    color: #FFF;
+    border-radius: 10px
+}
+.features .carousel-next,
+.features .carousel-prev{
+    color: #FFF;
+    padding: 14px 22px;
+    display: inline-block;
+}
+/* End the Section of Features */
+
+/* Start the Section of Our Team */
+.our-team .team-member .team-image{
+    position: relative;
+    overflow: hidden;
+}
+.our-team .team-member .team-image .social{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background: var(--main-color);
+    padding: 10px;
+    transition: transform .3s ease-in-out
+}
+.our-team .team-member .team-image:hover .social{
+    transform: translateX(0);
+}
+.our-team .team-member .team-image .social a{
+    color: #FFF;
+    display: block; 
+    padding: 7px 5px      
+}
+.our-team .team-member h3{
+    font-size: 1.2rem;
+    color: #000;
+    margin: 0;
+}
+.our-team .team-member span{
+    font-size: 0.8rem;
+    color: #CCC;
+    text-transform: uppercase
+}
+/* End the Section of Our Team */
+
+/* Start the Section of Portfolio */
+.portfolio .portfolio-btn .btn{
+    background: #f4f5f5;
+    color: #343a40;
+    margin: 5px;
+    padding: 7px 20px;
+    font-size: 0.8rem
+}
+.portfolio .portfolio-btn .btn:hover,
+.portfolio .portfolio-btn .active{
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: #FFF        
+}
+/* End the Section of Portfolio */
+
+/* Start the Section of Services */
+.Services{background-color: #f8f9fa}
+.service-item svg{color: var(--main-color);}
+/* End the Section of Services */
+
+/* Start the Section of Testimonial */
+.testimonials .carousel-indicators{bottom: -70px}
+.testimonials .carousel-indicators li{
+    background-color: #dee2e6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%
+}
+.testimonials .carousel-indicators .active{background-color: var(--main-color);}
+.testimonials .testim q{
+    font-size: 1.5rem
+}
+.testimonials .testim-info .person-figure{
+    width: 100px;
+    height: 66px
+}
+.testimonials .testim-info span{
+    text-transform: capitalize;
+    margin-top: -10px
+}
+/* End the Section of Testimonial */
+
+/* Start the Section of Portfolio */
+.portfolio .card a{
+    display: block;
+    position: relative
+}
+.portfolio .card a svg{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    color: #FFF;
+}
+.portfolio .card a:hover .overly{
+    opacity: 1;
+    visibility: visible 
+}
+/* End the Section of Portfolio */
+
+/* Start the Section of Pricing */
+.pricing{
+    background-color: #f8f9fa
+}
+.card{
+    border: none
+}
+.pricing .card span{
+    font-size: 1rem;
+    color: #ccd7e7
+}
+.pricing .card .checker .remove{
+    color: #dee2e6 !important;
+    text-decoration: line-through
+}
+.pricing .card .checker .remove svg{color: #dee2e6 !important; }
+/* End the Section of Pricing */
+
+/* start the Section of Blog */
+.blog .card-title a{color: #000}
+.blog .card-title a:hover{color: var(--main-color);}
+.blog .card-subtitle{
+    color: #b3b3b3;
+    text-transform: capitalize
+}
+/* End the Section of Blog */
+
+/* End the Section of contact */
+.contact{background-color: #f8f9fa}
+.form-control{
+    border-radius: 30px;
+    height: 43px
+}
+.contact form textarea.form-control {
+    height: 200px;
+}
+/* End the Section of contact */
+
+/* Start the Section of Footer */
+.footer{background-color: #333}
+.footer .quick-links li{margin-bottom: 7px}
+.footer ul li a{
+    color: #999;
+    font-size: 17px;
+    line-height: 1.7
+}
+.footer ul li a:hover{
+    color: #FFF;
+    opacity: 1
+}
+.footer .follow-us li{
+    margin-bottom: 10px;
+    margin-left: 30px
+}
+.footer .subscribe .btn{
+    background: #FFF;
+    color: #000;
+    height: 43px
+}
+/* End the Section of Footer */
+
+
+
+/*************** my frame work *************/
+.overly{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden
+}
+.checker li{
+    margin: 15px 33px;
+    color: #6c757d !important;
+    position: relative;
+
+}
+.checker li svg{
+    position: absolute;
+    top: 4px;
+    left: -33px;
+    color: #71bc42;
+}
+
+
+    
+/* Extra Small devices (landscape phones, 576px and down) */
+@media  (max-width: 575.98px ){     
+    .card-columns{
+        column-count: 1
+    }
+    .section-title{
+        font-size: 30px;        
+    }
+    .features .carousel .carousel-control{
+        top:36%
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media  (min-width: 576px ){     
+    .portfolio .card-columns{
+        column-count: 2
+    }
+    .blog .card-columns{
+        column-count: 1
+    }
+    .section-title{
+        font-size: 30px;        
+    }
+    .features .carousel .carousel-control{
+        top:53%
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .portfolio .card-columns{
+        column-count: 3
+    }
+    .blog .card-columns{
+        column-count: 2
+    }
+    .features .carousel .carousel-control{
+        top:63%
+    }
+
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .card-columns{
+        column-count: 4
+    }
+    .blog .card-columns{
+        column-count: 3
+    }
+    .section-title{
+        font-size: 40px;        
+    }
+}
+
+

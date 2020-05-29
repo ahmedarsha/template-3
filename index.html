@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>template-3[html-css,jQ,bootstrap]</title>
+        <link href="css/normalize.css" rel="stylesheet"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/all.min.css" rel="stylesheet"/>
+        <link href="css/custome.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        
+        <!-- Start the navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    Nitro<span class="text-primary">.</span>
+                </a>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <div class="menu-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item has-child">
+                            <a class="nav-link" href="#about-us" >about us</a>
+                            <i class="fas fa-chevron-down"></i>
+                            <ul class="children">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team">team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pricing">pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#FAQ">FAQ</a>
+                                </li>
+                                <li class="nav-item has-child">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <a class="nav-link" href="#">more links</a>
+                                    <ul class="children">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">menu 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">menu 2</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">menu 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                      </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-target="#main-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- End the navigation Bar -->
+        
+        <!-- Start the Section of header -->
+        <section id="home" class="section home">
+            <header>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-8  mt-5 text-center text-white">
+                            <h1 class="text-uppercase">Welcome</h1>
+                            <p class="mb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio soluta eius error.</p>
+                            <div class="mb-5">
+                                <a href ="#contact" class="btn btn-primary">
+                                    get in touch
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#about-us" class="mouse">
+                        <span class="mouse-icon">
+                            <span class="mouse-wheel"></span>
+                        </span>
+                    </a>
+                </div>
+            </header>
+        </section>
+        <!-- End the Section of header -->
+        
+        <!-- Start the Section of about us-->
+        <section id="about-us" class="section md-padding about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">about us</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 about-image">
+                        <img src="images/about.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col-lg-5 ml-auto mt-lg-0 mt-5 about-info">
+                        <h3 class="mb-4">For the next great business</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
+                        <ul class="checker list-unstyled">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Officia quaerat eaque neque
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Possimus aut consequuntur incidunt
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Lorem ipsum dolor sit amet
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Consectetur adipisicing elit
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End the Section of about us-->
+        
+        <!-- Start the Section of features-->
+        <section class="features md-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 mb-5 text-center">
+                        <h2 class="section-title">our features</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+                    </div>
+                </div>
+                <div id="feature-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-6 mb-5">
+                                    <img class="d-block w-100" src="images/feature/slide_1.jpg" alt="First slide">
+                                </div>
+                                <div class="col-lg-5 ml-auto">
+                                    <div class="feature-info">
+                                        <h2 class="section-title">Minimal and Modern Design</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
+                                        <a class="btn btn-primary" href="#">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6 mb-5">
+                                    <img class="d-block w-100" src="images/feature/slide_2.jpg" alt="second slide">
+                                </div>
+                                <div class="col-lg-5 ml-auto">
+                                    <div class="feature-info">
+                                        <h2 class="section-title">Do things with love</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
+                                        <a class="btn btn-primary" href="#">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6 mb-5">
+                                    <img class="d-block w-100" src="images/feature/slide_3.jpg" alt="third slide">
+                                </div>
+                                <div class="col-lg-5 ml-auto">
+                                    <div class="feature-info">
+                                        <h2 class="section-title">Take your business online</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
+                                        <a class="btn btn-primary" href="#">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-6 mb-5">
+                                    <img class="d-block w-100" src="images/feature/slide_4.jpg" alt="fourth slide">
+                                </div>
+                                <div class="col-lg-5 ml-auto">
+                                    <div class="feature-info">
+                                        <h2 class="section-title">4 Our Dedicated Professionals</h2>
+                                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
+                                        <a class="btn btn-primary" href="#">learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control">
+                        <a class="carousel-prev" href="#feature-carousel" role="button" data-slide="prev">
+                            <i class="fas fa-arrow-left"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-next" href="#feature-carousel" role="button" data-slide="next">
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End the Section of features-->
+        
+        <!-- Start the Section of our team-->
+        <section id="team" class="section our-team md-padding">
+            <div class="container">
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <h2 class="section-title">our team</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-member">
+                            <div class="team-image">
+                                <img class="img-fluid" src="images/team/person_1.jpg" alt="person 1">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-3">
+                                <h3>Kaiara Spencer</h3>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-member">
+                            <div class="team-image">
+                                <img class="img-fluid" src="images/team/person_2.jpg" alt="person 2">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-3">
+                                <h3>Dave Simpson</h3>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-member">
+                            <div class="team-image">
+                                <img class="img-fluid" src="images/team/person_3.jpg" alt="person 3">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-3">
+                                <h3>Ben Thompson</h3>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-member">
+                            <div class="team-image">
+                                <img class="img-fluid" src="images/team/person_4.jpg" alt="person 4">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-3">
+                                <h3>Kyla Stewart</h3>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-member">
+                            <div class="team-image">
+                                <img class="img-fluid" src="images/team/person_5.png" alt="person 5">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-3">
+                                <h3>Kaiara Spencer</h3>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-member">
+                            <div class="team-image">
+                                <img class="img-fluid" src="images/team/person_6.png" alt="person 6">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-3">
+                                <h3>Dave Simpson</h3>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-member">
+                            <div class="team-image">
+                                <img class="img-fluid" src="images/team/person_7.png" alt="person 7">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-3">
+                                <h3>Ben Thompson</h3>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="team-member">
+                            <div class="team-image">
+                                <img class="img-fluid" src="images/team/person_8.png" alt="person 8">
+                                <ul class="social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-3">
+                                <h3>Chris Stewart</h3>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End the Section of our team-->
+        <hr>
+        <!-- Start the Section of Portfolio-->
+        <section id="portfolio" class="section md-padding portfolio">
+            <div class="container">
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-7 text-center">
+                        <h2 class="section-title">portfolio</h2>
+                        <div class="portfolio-btn">
+                            <button class="btn active" data-class=".all">all</button>
+                            <button class="btn"  data-class=".web">web</button>
+                            <button class="btn"  data-class=".design">design</button>
+                            <button class="btn"  data-class=".brand">brand</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-columns" >
+                    <div class="card web">
+                        <a href="images/portfolio/01.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/01.jpg" alt="item 1"/>
+                        </a>
+                    </div>
+                    <div class="card web">
+                        <a href="images/portfolio/02.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/02.jpg" alt="item 2"/>
+                        </a>
+                    </div>
+                    <div class="card brand">
+                        <a href="images/portfolio/03.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/03.jpg" alt="item 3"/>
+                        </a>
+                    </div>
+                    <div class="card web">
+                        <a href="images/portfolio/04.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/04.jpg" alt="item 4"/>
+                        </a>
+                    </div>
+                    <div class="card brand">
+                        <a href="images/portfolio/05.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/05.jpg" alt="item 5"/>
+                        </a>
+                    </div>
+                    <div class="card design">
+                        <a href="images/portfolio/06.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/06.jpg" alt="item 6"/>
+                        </a>
+                    </div>
+                    <div class="card brand">
+                        <a href="images/portfolio/07.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/07.jpg" alt="item 7"/>
+                        </a>
+                    </div>
+                    <div class="card design">
+                        <a href="images/portfolio/08.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/08.jpg" alt="item 8"/>
+                        </a>
+                    </div>
+                    <div class="card design">
+                        <a href="images/portfolio/09.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/09.jpg" alt="item 9"/>
+                        </a>
+                    </div>
+                    <div class="card web">
+                        <a href="images/portfolio/10.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/10.jpg" alt="item 10"/>
+                        </a>
+                    </div>
+                    <div class="card design">
+                        <a href="images/portfolio/11.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/11.jpg" alt="item 1"/>
+                        </a>
+                    </div>
+                    <div class="card web">
+                        <a href="images/portfolio/12.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/12.jpg" alt="item 12"/>
+                        </a>
+                    </div>
+                    <div class="card web">
+                        <a href="images/portfolio/13.jpg">
+                            <div class="overly">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/13.jpg" alt="item 13"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End the Section of Portfolio-->
+
+        <!-- Start the Section of Services -->
+        <section id="services" class="section md-padding Services">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">Our Services</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="service-item col-lg-4 col-md-6 mb-5">
+                        <div class="mb-3">
+                            <i class="fas fa-rocket fa-3x"></i>
+                        </div>
+                        <div>
+                            <h4>Business Consulting</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div> 
+                    <div class="service-item col-lg-4 col-md-6 mb-4">
+                        <div class="mb-3">
+                            <i class="fas fa-desktop fa-3x"></i>
+                        </div>
+                        <div>
+                            <h4>Market Analysis</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="service-item col-lg-4 col-md-6 mb-5">
+                        <div class="mb-3">
+                            <i class="fas fa-tools fa-3x"></i>
+                        </div>
+                        <div>
+                            <h4>User Monitoring</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div> 
+                    <div class="service-item col-lg-4 col-md-6 mb-5">
+                        <div class="mb-3">
+                            <i class="far fa-lightbulb fa-3x"></i>
+                        </div>
+                        <div>
+                            <h4>Insurance Consulting</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="service-item col-lg-4 col-md-6 mb-5">
+                        <div class="mb-3">
+                            <i class="fas fa-balance-scale fa-3x"></i>
+                        </div>
+                        <div>
+                            <h4>Financial Investment</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div> 
+                    <div class="service-item col-lg-4 col-md-6 mb-5">
+                        <div class="mb-3">
+                            <i class="fas fa-hand-holding-usd fa-3x"></i>
+                        </div>
+                        <div>
+                            <h4>Financial Management</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- End the Section of Services -->
+        
+        <!-- Start the Section of testimonials -->
+        <section id="testimonials" class="section md-padding testimonials">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">testimonials</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="testim col-lg-8 text-center">
+                        <div id="carouselTestim" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselTestim" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselTestim" data-slide-to="1"></li>
+                                <li data-target="#carouselTestim" data-slide-to="2"></li>
+                                <li data-target="#carouselTestim" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <q class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.</q>
+                                    <div class="testim-info mt-5 d-flex align-items-center justify-content-center ">
+                                        <div class="person-figure">
+                                            <img class="w-50 img-fluid mx-auto rounded-circle" src="images/portfolio/p1.png" alt="person 1"/>
+                                        </div>
+                                        <span class="text-muted">john smith</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <q class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.</q>
+                                    <div class="testim-info mt-5 d-flex align-items-center justify-content-center ">
+                                        <div class="person-figure">
+                                            <img class="w-50 img-fluid mx-auto rounded-circle" src="images/portfolio/p2.png" alt="person 2"/>
+                                        </div>
+                                        <span class="text-muted">cristine aguilar</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <q class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.</q>
+                                    <div class="testim-info mt-5 d-flex align-items-center justify-content-center ">
+                                        <div class="person-figure">
+                                            <img class="w-50 img-fluid mx-auto rounded-circle" src="images/portfolio/p3.png" alt="person 3"/>
+                                        </div>
+                                        <span class="text-muted">michal smith</span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <q class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.</q>
+                                    <div class="testim-info mt-5 d-flex align-items-center justify-content-center ">
+                                        <div class="person-figure">
+                                            <img class="w-50 img-fluid mx-auto rounded-circle" src="images/portfolio/p1.png" alt="person 1"/>
+                                        </div>
+                                        <span class="text-muted">ali taha</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End the Section of testimonials -->
+        
+        <!-- Start the Section of Pricing -->
+        <section id="pricing" class="section pricing md-padding">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <h2 class="section-title text-center">pricing</h2>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-6 col-lg-4 mb-lg-0 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Basic</h3>
+                                <p class="text-primary text-center h1 mb-4">$47<span> / year</span></p>
+                                <ul class="checker list-unstyled mb-5">
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Officia quaerat eaque neque
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Possimus aut consequuntur incidunt
+                                    </li>
+                                    <li class="remove">
+                                        <i class="fas fa-check"></i>
+                                        Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li class="remove">
+                                        <i class="fas fa-check"></i>
+                                        Consectetur adipisicing elit
+                                    </li>
+                                    <li class="remove">
+                                        <i class="fas fa-check"></i>
+                                        Dolorum esse odio quas architecto sint
+                                    </li>
+                                </ul>
+                                <p class="text-center">
+                                    <a href="#" class="btn btn-secondary">buy now</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-lg-0 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Premium</h3>
+                                <p class="text-primary text-center h1 mb-4">$200<span> / year</span></p>
+                                <ul class="checker list-unstyled mb-5">
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Officia quaerat eaque neque
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Possimus aut consequuntur incidunt
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Consectetur adipisicing elit
+                                    </li>
+                                    <li class="remove">
+                                        <i class="fas fa-check"></i>
+                                        Dolorum esse odio quas architecto sint
+                                    </li>
+                                </ul>
+                                <p class="text-center">
+                                    <a href="#" class="btn btn-primary">buy now</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-lg-0 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Professional</h3>
+                                <p class="text-primary text-center h1 mb-4">$750<span> / year</span></p>
+                                <ul class="checker list-unstyled mb-5">
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Officia quaerat eaque neque
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Possimus aut consequuntur incidunt
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Lorem ipsum dolor sit amet
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Consectetur adipisicing elit
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        Dolorum esse odio quas architecto sint
+                                    </li>
+                                </ul>
+                                <p class="text-center">
+                                    <a href="#" class="btn btn-secondary">buy now</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="FAQ" class="row section justify-content-center p-5">
+                    <h2 class="section-title text-center">frequently ask questions</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="faq mb-5">
+                            <h4 class="mb-4">Can I accept both Paypal and Stripe?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+                        </div>
+                        <div class="faq mb-5">
+                            <h4 class="mb-4">What available is refund period?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+                        </div>
+                        <div class="faq mb-5">
+                            <h4 class="mb-4">Can I accept both Paypal and Stripe?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+                        </div>
+                        <div class="faq mb-5">
+                            <h4 class="mb-4">What available is refund period?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq mb-5">
+                            <h4 class="mb-4">Where are you from?</h4>
+                            <p>Voluptatum nobis obcaecati perferendis dolor totam unde dolores maxime corporis officia. Distinctio assumenda minima maiores.</p>
+                        </div>
+                        <div class="faq mb-5">
+                            <h4 class="mb-4">What is your opening time?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+                        </div>
+                        <div class="faq mb-5">
+                            <h4 class="mb-4">Can I accept both Paypal and Stripe?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+                        </div>
+                        <div class="faq mb-5">
+                            <h4 class="mb-4">What available is refund period?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End the Section of Pricing -->
+        
+        <!-- Start the Section -->
+        <section class="md-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-1 order-2">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="my-3 text-primary">
+                                    <i class="fas fa-hand-holding-usd fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h5>Web & Mobile Specialties</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis consect.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="my-3 text-primary">
+                                    <i class="fas fa-balance-scale fa-3x"></i>
+                                </div>
+                                <div>
+                                    <h5>Intuitive Thinkers</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.</p>
+                                    <a href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-2 order-1 ml-auto mb-4">
+                        <img class="img-fluid" src="images/about_1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End the Section -->
+        
+        <!-- Start the Section Blog -->
+        <section id="blog" class="section md-padding blog">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <h2 class="section-title">our blog</h2>
+                </div>
+                <div class="card-columns">
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="images/portfolio/01.jpg" alt="item 1">
+                        </a>
+                        <div class="blog-body py-4">
+                            <h5 class="card-title mb-3">
+                                <a href="#">Where Do You Learn HTML & CSS in 2019?</a>
+                            </h5>
+                            <h6 class="card-subtitle mb-4">
+                                ham brook <span>.</span> Jan 18, 2019 <span>.</span> 
+                                <a href="#">news</a>
+                            </h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+                            <a href="#">Continue Reading...</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="images/portfolio/11.jpg" alt="item 2">
+                        </a>
+                        <div class="blog-body py-4">
+                            <h5 class="card-title mb-3">
+                                <a href="#">Where Do You Learn HTML & CSS in 2019?</a>
+                            </h5>
+                            <h6 class="card-subtitle mb-4">
+                                ham brook <span>.</span> Jan 18, 2019 <span>.</span> 
+                                <a href="#">news</a>
+                            </h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+                            <a href="#">Continue Reading...</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img class="card-img-top" src="images/portfolio/07.jpg" alt="item 3">
+                        </a>
+                        <div class="blog-body py-4">
+                            <h5 class="card-title mb-3">
+                                <a href="#">Where Do You Learn HTML & CSS in 2019?</a>
+                            </h5>
+                            <h6 class="card-subtitle mb-4">
+                                ham brook <span>.</span> Jan 18, 2019 <span>.</span> 
+                                <a href="#">news</a>
+                            </h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
+                            <a href="#">Continue Reading...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End the Section Blog -->
+        
+        <!-- Start the Section Contact Us -->
+        <section id="contact" class="section md-padding contact">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <h2 class="section-title">contact us</h2>
+                </div>
+                <div class="row mb-5">
+                    <div class="contact-info col-md-4 mb-4 text-center">
+                        <i class="fas fa-map-marker-alt h4 text-primary"></i>
+                        <p class="text-muted mt-3">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
+                    <div class="contact-info col-md-4  mb-4 text-center">
+                        <i class="fas fa-phone-alt h4 text-primary"></i>
+                        <p class=" mt-3"><a href="#">+1 232 3235 324</a></p>
+                    </div>
+                    <div class="contact-info col-md-4  mb-4 text-center">
+                        <i class="far fa-envelope h4 text-primary"></i>
+                        <p class=" mt-3"><a href="#">youremail@domain.com</a></p>
+                    </div>
+                </div>
+                <form class="bg-white p-5" action="#">
+                    <h4 class="mb-5">contact form</h4>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 pr-md-3">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="form-group col-md-6 pl-md-3">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSubject">Subject</label>
+                        <input type="text" class="form-control" id="inputSubject">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" placeholder="Write your notes or questions here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">send message</button>
+                </form>
+            </div>
+        </section>
+        <!-- End the Section Contact Us -->
+       
+        <!-- Start the Section Footer -->
+        <section class="md-padding footer">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="text-white mb-4">about us</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-5 ml-md-auto">
+                                <h6 class="text-white mb-4">quick links</h6>
+                                <ul class="list-unstyled quick-links">
+                                    <li>
+                                        <a href="#about-us">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#services">services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#testimonials">testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-5">
+                                <h6 class="text-white mb-4">follow us</h6>
+                                <ul class="list-unstyled follow-us">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 subscribe">
+                        <h6 class="text-white mb-4">subscribe newsletter</h6>
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-transparent border-secondary" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-send">
+                            <div class="input-group-append">
+                                <button class="btn" type="button" id="button-send">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row justify-content-center mt-5">
+                    <p class="col-8 text-center text-capitalize copyright">
+                        copyright &copy;2020 all rights reserved | this template is made by <a href="#" class="text-uppercase">darsha</a>
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        <!-- End the Section Footer -->
+        
+        
+        
+        
+        <script src="js/jquery-3.3.1min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/all.min.js" ></script>
+        <script src="js/custome.js"></script>
+    </body>
+</html>
