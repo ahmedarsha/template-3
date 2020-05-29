@@ -508,6 +508,9 @@ header .mouse .mouse-icon .mouse-wheel{
     .section-title{
         font-size: 40px;        
     }
+    .features .carousel .carousel-control{
+        top:50%
+    }
 }
 
 
